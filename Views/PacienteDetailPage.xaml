@@ -1,0 +1,15 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SistemaMedico.Views"
+             x:Class="SistemaMedico.Views.PacienteDetailPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Nome" />
+        <Entry Text="{Binding Nome}" />
+        <Label Text="Idade" />
+        <Entry Text="{Binding Idade}" />
+        <Label Text="Diagnóstico" />
+        <Entry Text="{Binding Diagnostico}" />
+        <Button Text="Salvar" Clicked="OnSalvarClicked" />
+    </StackLayout>
+</ContentPage>
