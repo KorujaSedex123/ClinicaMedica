@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SistemaMedico.Views"
+             x:Class="SistemaMedico.Views.CadastroMedicoPage">
+
+	<StackLayout Padding="10">
+		<Label Text="Nome" />
+		<Entry x:Name="NomeEntry" Placeholder="Nome do medico" />
+
+		<Label Text="CRM" />
+		<Entry x:Name="CRMEntry" Placeholder="CRM do medico" Keyboard="Numeric" />
+
+		<Label Text="Especialidade" />
+		<Entry x:Name="EspecialidadeEntry" Placeholder="Especialidade do medico" />
+
+        <Label Text="Contato" />
+		<Entry x:Name="ContatoEntry" Placeholder="Conatato do medico" Keyboard="Numeric" />
+
+		<Button Text="Salvar" Clicked="OnSalvarClicked" />
+	</StackLayout>
+</ContentPage>
+

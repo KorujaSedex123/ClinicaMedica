@@ -1,0 +1,16 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SistemaMedico.Views"
+             x:Class="SistemaMedico.Views.MedicoListPage">
+
+    <StackLayout Padding="10">
+        <Button Text="Adicionar Medico" Clicked="OnAdicionarMedicoClicked"/>
+        <CollectionView x:Name="MedicosList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" Detail="{Binding Especialidade}"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
