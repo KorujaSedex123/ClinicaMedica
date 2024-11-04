@@ -13,8 +13,9 @@ Atualização 22/10
 Nessa atualização foi criado a pasta modelo, onde as classes foram separados pelos seus respectivos tipos como classe medico, classe paciente, internação e consulta.
 
 Atualização 03/11
-1.1) Nessa atualização foi mudado o programa da versão console para uma versão com interface grafica "dotnet Maui", deixando assim a versão de console de lado.
-Nela foi criado a tela Cadastro de pacientes.
+
+Nessa atualização foi mudado o programa da versão console para uma versão com interface grafica "dotnet Maui", deixando assim a versão de console de lado.
+Nela foi criado a tela Cadastro de pacientes e de Medicos.
 
 
 
