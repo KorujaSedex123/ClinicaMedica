@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClinicManager.Views.CadastroMedico"
+             Title="Cadastro de Médico">
+
+    <StackLayout Padding="10">
+        <Label Text="Nome" />
+        <Entry x:Name="NomeEntry" Placeholder="Digite o nome do médico" />
+
+        <Label Text="CRM" />
+        <Entry x:Name="CrmEntry" Placeholder="Digite o CRM" />
+
+        <Label Text="Especialidade" />
+        <Entry x:Name="EspecialidadeEntry" Placeholder="Digite a especialidade" />
+
+        <Label Text="Valor da Consulta" />
+        <Entry x:Name="ValorConsultaEntry" Placeholder="Digite o valor" Keyboard="Numeric" />
+
+        <Button Text="Salvar" Clicked="OnSalvarClicked" />
+    </StackLayout>
+
+</ContentPage>

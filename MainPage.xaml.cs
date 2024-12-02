@@ -1,25 +1,16 @@
-﻿namespace SistemaMedico
+﻿using ClinicManager.Views;
+namespace ClinicaMedica;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+    public MainPage()
     {
-        int count = 0;
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+        InitializeComponent();
     }
 
+    private async void OnCadastrarMedicoClicked(object sender, EventArgs e)
+    {
+        // Lógica para cadastro de médico
+        await Navigation.PushAsync(new CadastroMedico());
+    }
 }

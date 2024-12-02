@@ -1,15 +1,11 @@
-using System.Collections.Generic;
-
-namespace GerenciamentoHospitais.Models
+namespace ClinicManager.Models.Doctors
 {
     public class Medico
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public string CRM { get; set; }
-        public string Especialidade { get; set; }
-        public string Contato { get; set; }
-        public ICollection<Consulta> Consultas { get; set; }
-        public ICollection<Internacao> Internacoes { get; set; }
+        public int Id { get; set; } // Identificador único do médico.
+        public string Nome { get; set; } // Nome completo do médico.
+        public string CRM { get; set; } // Número do CRM do médico.
+        public string Especialidade { get; set; } // Especialidade médica do profissional.
+        public decimal ValorConsulta { get; set; } // Valor da consulta cobrada pelo médico.
     }
 }
